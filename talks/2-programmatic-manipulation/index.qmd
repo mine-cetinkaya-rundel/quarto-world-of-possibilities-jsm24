@@ -1,0 +1,24 @@
+---
+title: Programmatic Manipulation of Quarto Documents for Teaching
+author: Colin Rundel
+image: featured.png
+---
+
+## Abstract
+
+In this talk we will discuss the use of the parsermd package for the programmatic manipulation of Quarto documents.
+As the name implies the parsermd package was originally developed for the parsing and manipulation of RMarkdown documents, but we have recently worked to expand this functionality to support Quarto documents and their specific features (e.g. fenced divs, yaml chunk options, shortcodes, etc.).
+We will briefly review the structure of a typical Quarto document and how this is then represented within R once parsed as an abstract syntax tree (AST).
+The remainder of the talk will then focus on practical usage examples of these tools for teaching with Quarto, including automated feedback and cleaning, document restructuring, and others time permitting.
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="/talks/2-programmatic-manipulation/programmatic-manipulation.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+## Speaker
+
+![](colin.jpeg){style="float: right; padding-left: 10px;" fig-alt="Photo of Colin Rundel" width="300"}
+
+Colin Rundel is Associate Professor of the Practice at Duke University where he has been teaching since 2012.
+His work focuses on teaching statistical computing to both undergraduate and graduate students in both R and Python.

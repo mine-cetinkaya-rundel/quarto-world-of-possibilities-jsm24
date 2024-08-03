@@ -1,0 +1,26 @@
+---
+title: Engage your Reader with Closeread
+author: Colin Rundel
+image: featured.png
+---
+
+## Abstract
+
+Scrollytelling is a style of web design that transitions graphics and text as a user scrolls, allowing stories to progress naturally.
+Despite its power, scrollytelling typically requires specialist web dev skills beyond the reach of many data scientists.
+Closeread is a Quarto extension that makes a wide range of scrollytelling techniques available to authors without traditional web dev experience, with support for cross-fading plots, graphics and other chunk output alongside narrative content.
+You can zoom in on text, code, and images, and highlighting important components.
+Finally, Closeread allows authors with experience in Observable JS to write their own animated graphics that update smoothly as scrolling progresses.
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="/talks/4-closeread/closeread.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+## Speaker
+
+![](andrew.jpg){style="float: right; padding-left: 10px;" fig-alt="Photo of Andrew Bray" width="300"}
+
+Andrew is an Associate Professor of Teaching at Berkeley University.
+He develops and teaches courses in statistics and data science.
+His research interests include statistical computing, data privacy, and applications of statistical models to environmental science.

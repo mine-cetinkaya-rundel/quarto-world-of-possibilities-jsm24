@@ -1,0 +1,31 @@
+---
+title: Teaching (with) Quarto
+subtitle: JSM 2024
+listing:
+  contents: talks/*/index.qmd
+  fields: [image, title, author, subtitle]
+  type: grid
+  sort:
+    - filename
+---
+
+![](jsm-logo.png){style="float: right;" fig-alt="JSM 2023 Logo" width="150"}
+
+Tuesday, Aug 6\
+2:00 PM - 3:50 PM\
+[Session \# 1493](https://ww3.aievolution.com/JSMAnnual2024/Events/viewEv?ev=1493) \
+Oregon Convention Center Room: CC-254
+
+## Homepage
+
+All session materials can be viewed at <https://bit.ly/quarto-possibilities>. The GitHub repo that serves this site, <https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24>, contains the source code for all presentations.
+
+## Overview
+
+Quarto is an open-source scientific and technical publishing system that unifies and extends the R Markdown ecosystem. This feature-rich system is suitable for reproducible data analysis at all levels, from a simple homework assignment in an introductory statistics course to a computing-intensive, multi-language project. This session aims to introduce Quarto to those who are new to it as well as help those who have worked with it before diving deeper to help them find features of the toolkit that might help them in various aspects of their work. The session features five speakers who have been developing, using, and teaching Quarto over the last three years. The speakers will share their experiences with a wide range of features of Quarto, from creating single documents to complex book projects. The talks will also touch on multiple programming languages (R and Python) and tools (RStudio and Jupyter Notebooks). Topics discussed will include tips for creating highly stylized, reproducible slide decks, authoring technical books and documentation, and publication-ready scientific manuscripts with embedded computing. The session will also feature a walkthrough of making a personal/academic/research group website with a blog. The talks will feature code examples in R and Python, and one talk specifically will focus on using Quarto with Jupyter Notebooks and Python.
+
+**Session chair:** [Maria Tackett](https://maria-tackett.netlify.app/) - Duke
+
+**Session organizer:** [Mine Çetinkaya-Rundel](https://mine-cr.com/) - Duke University + Posit
+
+## Talks

@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  repo-url: https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24
+  repo-actions: [edit, issue]
+  navbar:
+    logo: jsm-logo.png
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+    tools:
+      - icon: github
+        href: https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+
+editor: visual
+
+execute:
+  freeze: auto

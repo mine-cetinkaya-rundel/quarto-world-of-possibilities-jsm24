@@ -1,0 +1,20 @@
+---
+title: From Zero to Website in Twenty Minutes with Quarto
+author: Charlotte Wickham
+image: featured.png
+---
+
+## Abstract
+
+\[TO DO: Add abstract\]
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="/talks/3-websites/websites.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+## Speaker
+
+![](charlotte.jpg){style="float: right; padding-left: 10px;" fig-alt="Photo of Charlotte Wickham" fig-align="right" width="300"}
+
+Charlotte works at Posit, PBC on the Developer Relations team with a focus on Quarto.
