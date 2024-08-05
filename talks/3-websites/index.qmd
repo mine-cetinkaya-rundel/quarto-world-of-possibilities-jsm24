@@ -6,15 +6,24 @@ image: featured.png
 
 ## Abstract
 
-\[TO DO: Add abstract\]
+As a data professional, at some point, you’ll want a website, whether it's for yourself, a project, or a research group. Quarto is a great way to make one: build your site with plain text files that you can edit in your favorite tool and check in to version control; structure your content into folders and pages in a way that makes sense to you; create content that includes code and its output; and generate listing pages that help readers navigate collections of content like projects, publications or people. 
+
+In this talk, I’ll walk you through the process from scratch. You’ll see how to get started with a basic template and then edit it to your needs, including adding pages, customizing navigation, adding a blog or other listing, personalizing the appearance, and getting it online. 
+
 
 ## Slides
 
 ```{=html}
-<iframe class="slide-deck" src="/talks/3-websites/websites.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<iframe src="https://charlotte.quarto.pub/jsm2024/#/title-slide" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
+
+[Full Screen Slides](https://charlotte.quarto.pub/jsm2024)
+
+[Annotated Notes](https://charlotte.quarto.pub/jsm2024/assets/demo.html)
+
 ## Speaker
 
 ![](charlotte.jpg){style="float: right; padding-left: 10px;" fig-alt="Photo of Charlotte Wickham" fig-align="right" width="300"}
 
 Charlotte works at Posit, PBC on the Developer Relations team with a focus on Quarto.
+
