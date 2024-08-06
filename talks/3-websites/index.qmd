@@ -17,6 +17,8 @@ You’ll see how to get started with a basic template and then edit it to your n
 ```{=html}
 <iframe src="https://charlotte.quarto.pub/jsm2024/#/title-slide" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
+[Source code for slides](https://github.com/cwickham/zero-to-website)
+
 [Full Screen Slides](https://charlotte.quarto.pub/jsm2024)
 
 [Annotated Notes](https://charlotte.quarto.pub/jsm2024/assets/demo.html)
