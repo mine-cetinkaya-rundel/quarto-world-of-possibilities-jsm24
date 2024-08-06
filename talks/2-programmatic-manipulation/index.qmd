@@ -14,8 +14,10 @@ The remainder of the talk will then focus on practical usage examples of these t
 ## Slides
 
 ```{=html}
-<iframe class="slide-deck" src="/talks/2-programmatic-manipulation/programmatic-manipulation.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<iframe class="slide-deck" src="https://rundel.github.io/Presentations/JSM2024/jsm2024.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
+[Source code for slides](https://github.com/rundel/Presentations/tree/master/JSM2024)
+
 ## Speaker
 
 ![](colin.jpeg){style="float: right; padding-left: 10px;" fig-alt="Photo of Colin Rundel" width="300"}
