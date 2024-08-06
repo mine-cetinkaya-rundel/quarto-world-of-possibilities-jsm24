@@ -19,7 +19,7 @@ Oregon Convention Center Room: CC-254
 ## Homepage
 
 All session materials can be viewed at <https://bit.ly/quarto-possibilities>.
-The GitHub repo that serves this site, <https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24>, contains the source code for all presentations.
+The GitHub repo that serves this site is at <https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24>.
 
 ## Overview
 
