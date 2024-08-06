@@ -1,5 +1,6 @@
 ---
-title: Discussion
+title: Looking back and looking beyond
+subtitle: Discussion
 author: Mine Çetinkaya-Rundel
 image: featured.png
 ---

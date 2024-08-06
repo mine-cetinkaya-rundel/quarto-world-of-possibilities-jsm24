@@ -1,5 +1,5 @@
 ---
-title: "looking back,<br>and looking beyond"
+title: "looking back<br>and looking beyond"
 subtitle: "a world of possibilities for<br>reproducible publishing with quarto"
 author: "mine çetinkaya-rundel"
 format: 
@@ -67,32 +67,33 @@ plot(cars)
 ::: incremental
 -   Don't start from scratch!
 
--   Tooling is there and well-documented for going from good to "stunning" presentations but it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools -- sound familiar?
+-   Tooling is there and well-documented for going from good to "stunning" websites, but it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools -- sound familiar?
 
 -   There is no excuse for not having a personal (or otherwise) website made with Quarto
 :::
 
-## website = a few qmds + `_quarto.yml`
+## course websites + search
 
 ```{=html}
-<iframe src="https://sta199-s24.github.io/project-spelling_bees/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
+<iframe src="https://sta199-s24.github.io/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
 ```
 ## student project websites
 
 ::: columns
 ::: {.column width="50%"}
--   GitHub repository
-
 -   few `.qmd`s
+
+-   `_quarto.yml`
 :::
 
-::: {.column width="50%"}
--   `_quarto.yml`
+::: {.column .fragment width="50%"}
+-   GitHub repo
 
 -   GitHub action
 :::
 :::
 
+::: fragment
 ``` {.yaml filename=".github/workflows/render-website.yaml"}
 on:
   push:
@@ -128,13 +129,13 @@ jobs:
           branch: gh-pages
           folder: docs
 ```
+:::
 
-## course websites + search
+## et voila!
 
 ```{=html}
-<iframe src="https://sta199-s24.github.io/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
+<iframe src="https://sta199-s24.github.io/project-spelling_bees/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
 ```
-
 ## break `quarto`
 
 <hr>
@@ -159,9 +160,9 @@ jobs:
 
 ## a look back at breaking `rmarkdown`
 
-1. Make a template
+1.  Make a template
 
-```{.r filename="gen-template.R"}
+``` {.r filename="gen-template.R"}
 library(magrittr)
 library(readr)
 
@@ -172,11 +173,11 @@ parsermd::parse_rmd("lab-06.Rmd") %>%
   write_rds(here::here(".github/workflows/template.rds"))
 ```
 
-## a look back at break `rmarkdown` 
+## a look back at break `rmarkdown`
 
-2. Check against the a template with GitHub actions
+2.  Check against the a template with GitHub actions
 
-```{.yaml filename=".github/workflows/rmd_structure.yml"}
+``` {.yaml filename=".github/workflows/rmd_structure.yml"}
 on:
   push:
     paths:
@@ -222,8 +223,10 @@ jobs:
 ```
 ## as simple as...
 
-::: {.center-align}
-*easy peasy* {{< fa lemon >}} *squeezy*
+<br>
+
+::: center-align
+easy peasy {{< fa lemon >}} squeezy
 :::
 
 <br>
@@ -240,9 +243,7 @@ quarto add quarto-ext/fontawesome
 
 -   Use it with the `fa` shortcode
 
-``` markdown
-*easy peasy* {{< fa lemon >}} *squeezy*
-```
+![](images/fontawesome.png){width="593"}
 
 ## as not-so-simple as...
 
