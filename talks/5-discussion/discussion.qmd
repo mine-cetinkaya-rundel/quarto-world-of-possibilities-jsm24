@@ -261,11 +261,11 @@ quarto add quarto-ext/fontawesome
 
 ![](images/fontawesome.png){width="593"}
 
-## as not-so-simple as...
+## as not-so-simple as... {auto-animate=true}
 
 ![](images/article.png){fig-align="center"}
 
-## as not-so-simple as... {.nostretch}
+## as not-so-simple as... {auto-animate=true .nostretch}
 
 ![](images/article.png){fig-align="center" width="500"}
 
