@@ -2,6 +2,7 @@
 title: A World of Possibilities for Reproducible Publishing with Quarto
 subtitle: JSM 2024
 listing:
+  id: talks
   contents: talks/*/index.qmd
   fields: [image, title, author, subtitle]
   type: grid
@@ -13,13 +14,13 @@ listing:
 
 Tuesday, Aug 6\
 2:00 PM - 3:50 PM\
-[Session \# 1493](https://ww3.aievolution.com/JSMAnnual2024/Events/viewEv?ev=1493) \
+[Session \# 1493](https://ww3.aievolution.com/JSMAnnual2024/Events/viewEv?ev=1493)\
 Oregon Convention Center Room: CC-254
 
-## Homepage
+## Talks
 
-All session materials can be viewed at <https://bit.ly/quarto-possibilities>.
-The GitHub repo that serves this site is at <https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24>.
+::: {#talks}
+:::
 
 ## Overview
 
@@ -37,4 +38,7 @@ The talks will feature code examples in R and Python, and one talk specifically 
 
 **Session organizer:** [Mine Çetinkaya-Rundel](https://mine-cr.com/) - Duke University + Posit
 
-## Talks
+## Homepage
+
+All session materials can be viewed at <https://bit.ly/quarto-possibilities>.
+The GitHub repo that serves this site is at <https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24>.
