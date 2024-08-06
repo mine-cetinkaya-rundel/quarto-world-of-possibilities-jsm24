@@ -1,6 +1,5 @@
 project:
   type: website
-  output-dir: docs
 
 website:
   repo-url: https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24
