@@ -24,6 +24,22 @@ fig-asp: 0.618
 ```
 :::
 
+## yes, dark mode is a possibility
+
+```{.yaml filename="_quarto.yml"}
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+```
+
+<br><br>
+
+::: {.fragment .hand-blue-large}
+but let's get back to business...
+:::
+
 ## use `quarto`
 
 <hr>
@@ -209,11 +225,11 @@ jobs:
 <hr>
 
 ::: incremental
--   Item 1
+-   How text is presented might (does?) have an effect on how much your readers focus on what they're reading
 
--   Item 2
+-   When all of `quarto` isn't enough, dive into the extensions
 
--   Item 3
+-   You -- yes, you, person with (probably) a stats degree and a passion for making things work / look exactly the way you want them -- can also extend Quarto!
 :::
 
 ## so many extensions!
