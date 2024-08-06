@@ -63,6 +63,13 @@
     "text": "one-stop shop\n\nbit.ly/quarto-possibilities"
   },
   {
+    "objectID": "talks/5-discussion/discussion.html#yes-dark-mode-is-a-possibility",
+    "href": "talks/5-discussion/discussion.html#yes-dark-mode-is-a-possibility",
+    "title": "looking backand looking beyond",
+    "section": "yes, dark mode is a possibility",
+    "text": "yes, dark mode is a possibility\n\n\n_quarto.yml\n\nformat:\n  html:\n    theme: \n      light: flatly\n      dark: darkly\n\n\n\nbut let’s get back to business…"
+  },
+  {
     "objectID": "talks/5-discussion/discussion.html#use-quarto",
     "href": "talks/5-discussion/discussion.html#use-quarto",
     "title": "looking backand looking beyond",
@@ -137,7 +144,7 @@
     "href": "talks/5-discussion/discussion.html#extend-quarto",
     "title": "looking backand looking beyond",
     "section": "extend quarto",
-    "text": "extend quarto\n\n Andrew :: closeread\n\n\n\nItem 1\nItem 2\nItem 3"
+    "text": "extend quarto\n\n Andrew :: closeread\n\n\n\nHow text is presented might (does?) have an effect on how much your readers focus on what they’re reading\nWhen all of quarto isn’t enough, dive into the extensions\nYou – yes, you, person with (probably) a stats degree and a passion for making things work / look exactly the way you want them – can also extend Quarto!"
   },
   {
     "objectID": "talks/5-discussion/discussion.html#so-many-extensions",
