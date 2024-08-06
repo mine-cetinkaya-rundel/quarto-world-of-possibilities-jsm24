@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-talks .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-talks'] = new List('listing-talks', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -168,9 +168,9 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#homepage" id="toc-homepage" class="nav-link active" data-scroll-target="#homepage">Homepage</a></li>
+  <li><a href="#talks" id="toc-talks" class="nav-link active" data-scroll-target="#talks">Talks</a></li>
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#talks" id="toc-talks" class="nav-link" data-scroll-target="#talks">Talks</a></li>
+  <li><a href="#homepage" id="toc-homepage" class="nav-link" data-scroll-target="#homepage">Homepage</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -200,28 +200,13 @@ window.Quarto = {
 <p><img src="jsm-logo.png" class="img-fluid" style="float: right;" alt="JSM 2023 Logo" width="150"></p>
 <p>Tuesday, Aug 6<br>
 2:00 PM - 3:50 PM<br>
-<a href="https://ww3.aievolution.com/JSMAnnual2024/Events/viewEv?ev=1493">Session # 1493</a>&nbsp;<br>
+<a href="https://ww3.aievolution.com/JSMAnnual2024/Events/viewEv?ev=1493">Session # 1493</a><br>
 Oregon Convention Center Room: CC-254</p>
-<section id="homepage" class="level2">
-<h2 class="anchored" data-anchor-id="homepage">Homepage</h2>
-<p>All session materials can be viewed at <a href="https://bit.ly/quarto-possibilities" class="uri">https://bit.ly/quarto-possibilities</a>. The GitHub repo that serves this site is at <a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24" class="uri">https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24</a>.</p>
-</section>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Quarto is an open-source scientific and technical publishing system that unifies and extends the R Markdown ecosystem. This feature-rich system is suitable for reproducible data analysis at all levels, from a simple homework assignment in an introductory statistics course to a computing-intensive, multi-language project. This session aims to introduce Quarto to those who are new to it as well as help those who have worked with it before diving deeper to help them find features of the toolkit that might help them in various aspects of their work. The session features five speakers who have been developing, using, and teaching Quarto over the last three years. The speakers will share their experiences with a wide range of features of Quarto, from creating single documents to complex book projects. The talks will also touch on multiple programming languages (R and Python) and tools (RStudio and Jupyter Notebooks). Topics discussed will include tips for creating highly stylized, reproducible slide decks, authoring technical books and documentation, and publication-ready scientific manuscripts with embedded computing. The session will also feature a walkthrough of making a personal/academic/research group website with a blog. The talks will feature code examples in R and Python, and one talk specifically will focus on using Quarto with Jupyter Notebooks and Python.</p>
-<p><strong>Session chair:</strong> <a href="https://maria-tackett.netlify.app/">Maria Tackett</a> - Duke</p>
-<p><strong>Session organizer:</strong> <a href="https://mine-cr.com/">Mine Çetinkaya-Rundel</a> - Duke University + Posit</p>
-</section>
 <section id="talks" class="level2">
 <h2 class="anchored" data-anchor-id="talks">Talks</h2>
-
-
-
-</section>
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div id="listing-talks" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1722962412494" data-listing-reading-time-sort="1" data-listing-word-count-sort="150">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1722962812729" data-listing-reading-time-sort="1" data-listing-word-count-sort="150">
 <a href="./talks/1-presentations/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -240,7 +225,7 @@ Emil Hvitfeldt
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1722962412506" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1722962812737" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
 <a href="./talks/2-programmatic-manipulation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -259,7 +244,7 @@ Colin Rundel
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1722962412510" data-listing-reading-time-sort="1" data-listing-word-count-sort="167">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1722962812741" data-listing-reading-time-sort="1" data-listing-word-count-sort="167">
 <a href="./talks/3-websites/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -278,7 +263,7 @@ Charlotte Wickham
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1722962412510" data-listing-reading-time-sort="1" data-listing-word-count-sort="153">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1722962812741" data-listing-reading-time-sort="1" data-listing-word-count-sort="153">
 <a href="./talks/4-closeread/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -290,14 +275,14 @@ Engage your Reader with Closeread
 </h5>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
-Colin Rundel
+Andrew Bray
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1722962412510" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1722962812741" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
 <a href="./talks/5-discussion/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -320,7 +305,23 @@ Mine Çetinkaya-Rundel
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+</section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Quarto is an open-source scientific and technical publishing system that unifies and extends the R Markdown ecosystem. This feature-rich system is suitable for reproducible data analysis at all levels, from a simple homework assignment in an introductory statistics course to a computing-intensive, multi-language project. This session aims to introduce Quarto to those who are new to it as well as help those who have worked with it before diving deeper to help them find features of the toolkit that might help them in various aspects of their work. The session features five speakers who have been developing, using, and teaching Quarto over the last three years. The speakers will share their experiences with a wide range of features of Quarto, from creating single documents to complex book projects. The talks will also touch on multiple programming languages (R and Python) and tools (RStudio and Jupyter Notebooks). Topics discussed will include tips for creating highly stylized, reproducible slide decks, authoring technical books and documentation, and publication-ready scientific manuscripts with embedded computing. The session will also feature a walkthrough of making a personal/academic/research group website with a blog. The talks will feature code examples in R and Python, and one talk specifically will focus on using Quarto with Jupyter Notebooks and Python.</p>
+<p><strong>Session chair:</strong> <a href="https://maria-tackett.netlify.app/">Maria Tackett</a> - Duke</p>
+<p><strong>Session organizer:</strong> <a href="https://mine-cr.com/">Mine Çetinkaya-Rundel</a> - Duke University + Posit</p>
+</section>
+<section id="homepage" class="level2">
+<h2 class="anchored" data-anchor-id="homepage">Homepage</h2>
+<p>All session materials can be viewed at <a href="https://bit.ly/quarto-possibilities" class="uri">https://bit.ly/quarto-possibilities</a>. The GitHub repo that serves this site is at <a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24" class="uri">https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24</a>.</p>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

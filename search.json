@@ -1,61 +1,5 @@
 [
   {
-    "objectID": "talks/3-websites/index.html",
-    "href": "talks/3-websites/index.html",
-    "title": "From Zero to Website in Twenty Minutes with Quarto",
-    "section": "",
-    "text": "As a data professional, at some point, you’ll want a website, whether it’s for yourself, a project, or a research group. Quarto is a great way to make one: build your site with plain text files that you can edit in your favorite tool and check in to version control; structure your content into folders and pages in a way that makes sense to you; create content that includes code and its output; and generate listing pages that help readers navigate collections of content like projects, publications or people.\nIn this talk, I’ll walk you through the process from scratch. You’ll see how to get started with a basic template and then edit it to your needs, including adding pages, customizing navigation, adding a blog or other listing, personalizing the appearance, and getting it online."
-  },
-  {
-    "objectID": "talks/3-websites/index.html#abstract",
-    "href": "talks/3-websites/index.html#abstract",
-    "title": "From Zero to Website in Twenty Minutes with Quarto",
-    "section": "",
-    "text": "As a data professional, at some point, you’ll want a website, whether it’s for yourself, a project, or a research group. Quarto is a great way to make one: build your site with plain text files that you can edit in your favorite tool and check in to version control; structure your content into folders and pages in a way that makes sense to you; create content that includes code and its output; and generate listing pages that help readers navigate collections of content like projects, publications or people.\nIn this talk, I’ll walk you through the process from scratch. You’ll see how to get started with a basic template and then edit it to your needs, including adding pages, customizing navigation, adding a blog or other listing, personalizing the appearance, and getting it online."
-  },
-  {
-    "objectID": "talks/3-websites/index.html#slides",
-    "href": "talks/3-websites/index.html#slides",
-    "title": "From Zero to Website in Twenty Minutes with Quarto",
-    "section": "Slides",
-    "text": "Slides\n\nFull Screen Slides\nAnnotated Notes"
-  },
-  {
-    "objectID": "talks/3-websites/index.html#speaker",
-    "href": "talks/3-websites/index.html#speaker",
-    "title": "From Zero to Website in Twenty Minutes with Quarto",
-    "section": "Speaker",
-    "text": "Speaker\n\n\n\n\n\nCharlotte works at Posit, PBC on the Developer Relations team with a focus on Quarto."
-  },
-  {
-    "objectID": "talks/4-closeread/index.html",
-    "href": "talks/4-closeread/index.html",
-    "title": "Engage your Reader with Closeread",
-    "section": "",
-    "text": "Scrollytelling is a style of web design that transitions graphics and text as a user scrolls, allowing stories to progress naturally. Despite its power, scrollytelling typically requires specialist web dev skills beyond the reach of many data scientists. Closeread is a Quarto extension that makes a wide range of scrollytelling techniques available to authors without traditional web dev experience, with support for cross-fading plots, graphics and other chunk output alongside narrative content. You can zoom in on text, code, and images, and highlighting important components. Finally, Closeread allows authors with experience in Observable JS to write their own animated graphics that update smoothly as scrolling progresses."
-  },
-  {
-    "objectID": "talks/4-closeread/index.html#abstract",
-    "href": "talks/4-closeread/index.html#abstract",
-    "title": "Engage your Reader with Closeread",
-    "section": "",
-    "text": "Scrollytelling is a style of web design that transitions graphics and text as a user scrolls, allowing stories to progress naturally. Despite its power, scrollytelling typically requires specialist web dev skills beyond the reach of many data scientists. Closeread is a Quarto extension that makes a wide range of scrollytelling techniques available to authors without traditional web dev experience, with support for cross-fading plots, graphics and other chunk output alongside narrative content. You can zoom in on text, code, and images, and highlighting important components. Finally, Closeread allows authors with experience in Observable JS to write their own animated graphics that update smoothly as scrolling progresses."
-  },
-  {
-    "objectID": "talks/4-closeread/index.html#slides",
-    "href": "talks/4-closeread/index.html#slides",
-    "title": "Engage your Reader with Closeread",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
-    "objectID": "talks/4-closeread/index.html#speaker",
-    "href": "talks/4-closeread/index.html#speaker",
-    "title": "Engage your Reader with Closeread",
-    "section": "Speaker",
-    "text": "Speaker\n\nAndrew is an Associate Professor of Teaching at Berkeley University. He develops and teaches courses in statistics and data science. His research interests include statistical computing, data privacy, and applications of statistical models to environmental science."
-  },
-  {
     "objectID": "talks/1-presentations/index.html",
     "href": "talks/1-presentations/index.html",
     "title": "Creating Stunning Presentations with Quarto",
@@ -84,39 +28,32 @@
     "text": "Speaker\n\nEmil is a Software Engineer at Posit PBC. Proud co-author of Supervised Machine Learning for Text Analysis in R with Julia Silge. My interests include developing tools for natural language processing, machine learning using tidymodels, education, and the use of colors in data visualizations."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "A World of Possibilities for Reproducible Publishing with Quarto",
+    "objectID": "talks/3-websites/index.html",
+    "href": "talks/3-websites/index.html",
+    "title": "From Zero to Website in Twenty Minutes with Quarto",
     "section": "",
-    "text": "Tuesday, Aug 6\n2:00 PM - 3:50 PM\nSession # 1493 \nOregon Convention Center Room: CC-254"
+    "text": "As a data professional, at some point, you’ll want a website, whether it’s for yourself, a project, or a research group. Quarto is a great way to make one: build your site with plain text files that you can edit in your favorite tool and check in to version control; structure your content into folders and pages in a way that makes sense to you; create content that includes code and its output; and generate listing pages that help readers navigate collections of content like projects, publications or people.\nIn this talk, I’ll walk you through the process from scratch. You’ll see how to get started with a basic template and then edit it to your needs, including adding pages, customizing navigation, adding a blog or other listing, personalizing the appearance, and getting it online."
   },
   {
-    "objectID": "index.html#homepage",
-    "href": "index.html#homepage",
-    "title": "A World of Possibilities for Reproducible Publishing with Quarto",
-    "section": "Homepage",
-    "text": "Homepage\nAll session materials can be viewed at https://bit.ly/quarto-possibilities. The GitHub repo that serves this site is at https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24."
+    "objectID": "talks/3-websites/index.html#abstract",
+    "href": "talks/3-websites/index.html#abstract",
+    "title": "From Zero to Website in Twenty Minutes with Quarto",
+    "section": "",
+    "text": "As a data professional, at some point, you’ll want a website, whether it’s for yourself, a project, or a research group. Quarto is a great way to make one: build your site with plain text files that you can edit in your favorite tool and check in to version control; structure your content into folders and pages in a way that makes sense to you; create content that includes code and its output; and generate listing pages that help readers navigate collections of content like projects, publications or people.\nIn this talk, I’ll walk you through the process from scratch. You’ll see how to get started with a basic template and then edit it to your needs, including adding pages, customizing navigation, adding a blog or other listing, personalizing the appearance, and getting it online."
   },
   {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "A World of Possibilities for Reproducible Publishing with Quarto",
-    "section": "Overview",
-    "text": "Overview\nQuarto is an open-source scientific and technical publishing system that unifies and extends the R Markdown ecosystem. This feature-rich system is suitable for reproducible data analysis at all levels, from a simple homework assignment in an introductory statistics course to a computing-intensive, multi-language project. This session aims to introduce Quarto to those who are new to it as well as help those who have worked with it before diving deeper to help them find features of the toolkit that might help them in various aspects of their work. The session features five speakers who have been developing, using, and teaching Quarto over the last three years. The speakers will share their experiences with a wide range of features of Quarto, from creating single documents to complex book projects. The talks will also touch on multiple programming languages (R and Python) and tools (RStudio and Jupyter Notebooks). Topics discussed will include tips for creating highly stylized, reproducible slide decks, authoring technical books and documentation, and publication-ready scientific manuscripts with embedded computing. The session will also feature a walkthrough of making a personal/academic/research group website with a blog. The talks will feature code examples in R and Python, and one talk specifically will focus on using Quarto with Jupyter Notebooks and Python.\nSession chair: Maria Tackett - Duke\nSession organizer: Mine Çetinkaya-Rundel - Duke University + Posit"
+    "objectID": "talks/3-websites/index.html#slides",
+    "href": "talks/3-websites/index.html#slides",
+    "title": "From Zero to Website in Twenty Minutes with Quarto",
+    "section": "Slides",
+    "text": "Slides\n\nFull Screen Slides\nAnnotated Notes"
   },
   {
-    "objectID": "index.html#talks",
-    "href": "index.html#talks",
-    "title": "A World of Possibilities for Reproducible Publishing with Quarto",
-    "section": "Talks",
-    "text": "Talks"
-  },
-  {
-    "objectID": "talks/5-discussion/index.html#speaker",
-    "href": "talks/5-discussion/index.html#speaker",
-    "title": "Discussion",
+    "objectID": "talks/3-websites/index.html#speaker",
+    "href": "talks/3-websites/index.html#speaker",
+    "title": "From Zero to Website in Twenty Minutes with Quarto",
     "section": "Speaker",
-    "text": "Speaker\n\nMine Çetinkaya-Rundel is Professor of the Practice at Duke University and Developer Educator at RStudio. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine works on integrating computation into the undergraduate statistics curriculum, using reproducible research methodologies and analysis of real and complex datasets. Mine works on the OpenIntro project, whose mission is to make educational products that are free, transparent, and lower barriers to education. As part of this project she co-authored four open-source introductory statistics textbooks. She is also the creator and maintainer of datasciencebox.org and she teaches the popular Statistics with R MOOC on Coursera. Mine is a Fellow of the ASA and Elected Member of the ISI as well as the winner of the 2021 Robert V. Hogg Award for For Excellence in Teaching Introductory Statistics. In 2023, she is the Chair of the ASA Section on Statistical Computing."
+    "text": "Speaker\n\n\n\n\n\nCharlotte works at Posit, PBC on the Developer Relations team with a focus on Quarto."
   },
   {
     "objectID": "talks/2-programmatic-manipulation/index.html",
@@ -145,5 +82,68 @@
     "title": "Programmatic Manipulation of Quarto Documents for Teaching",
     "section": "Speaker",
     "text": "Speaker\n\nColin Rundel is Associate Professor of the Practice at Duke University where he has been teaching since 2012. His work focuses on teaching statistical computing to both undergraduate and graduate students in both R and Python."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "A World of Possibilities for Reproducible Publishing with Quarto",
+    "section": "",
+    "text": "Tuesday, Aug 6\n2:00 PM - 3:50 PM\nSession # 1493\nOregon Convention Center Room: CC-254"
+  },
+  {
+    "objectID": "index.html#talks",
+    "href": "index.html#talks",
+    "title": "A World of Possibilities for Reproducible Publishing with Quarto",
+    "section": "Talks",
+    "text": "Talks\n\n\n\n\n\n\n\n\n\n\nCreating Stunning Presentations with Quarto\n\n\n\nEmil Hvitfeldt\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProgrammatic Manipulation of Quarto Documents for Teaching\n\n\n\nColin Rundel\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Zero to Website in Twenty Minutes with Quarto\n\n\n\nCharlotte Wickham\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEngage your Reader with Closeread\n\n\n\nAndrew Bray\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\nMine Çetinkaya-Rundel\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "A World of Possibilities for Reproducible Publishing with Quarto",
+    "section": "Overview",
+    "text": "Overview\nQuarto is an open-source scientific and technical publishing system that unifies and extends the R Markdown ecosystem. This feature-rich system is suitable for reproducible data analysis at all levels, from a simple homework assignment in an introductory statistics course to a computing-intensive, multi-language project. This session aims to introduce Quarto to those who are new to it as well as help those who have worked with it before diving deeper to help them find features of the toolkit that might help them in various aspects of their work. The session features five speakers who have been developing, using, and teaching Quarto over the last three years. The speakers will share their experiences with a wide range of features of Quarto, from creating single documents to complex book projects. The talks will also touch on multiple programming languages (R and Python) and tools (RStudio and Jupyter Notebooks). Topics discussed will include tips for creating highly stylized, reproducible slide decks, authoring technical books and documentation, and publication-ready scientific manuscripts with embedded computing. The session will also feature a walkthrough of making a personal/academic/research group website with a blog. The talks will feature code examples in R and Python, and one talk specifically will focus on using Quarto with Jupyter Notebooks and Python.\nSession chair: Maria Tackett - Duke\nSession organizer: Mine Çetinkaya-Rundel - Duke University + Posit"
+  },
+  {
+    "objectID": "index.html#homepage",
+    "href": "index.html#homepage",
+    "title": "A World of Possibilities for Reproducible Publishing with Quarto",
+    "section": "Homepage",
+    "text": "Homepage\nAll session materials can be viewed at https://bit.ly/quarto-possibilities. The GitHub repo that serves this site is at https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24."
+  },
+  {
+    "objectID": "talks/5-discussion/index.html#speaker",
+    "href": "talks/5-discussion/index.html#speaker",
+    "title": "Discussion",
+    "section": "Speaker",
+    "text": "Speaker\n\nMine Çetinkaya-Rundel is Professor of the Practice at Duke University and Developer Educator at RStudio. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine works on integrating computation into the undergraduate statistics curriculum, using reproducible research methodologies and analysis of real and complex datasets. Mine works on the OpenIntro project, whose mission is to make educational products that are free, transparent, and lower barriers to education. As part of this project she co-authored four open-source introductory statistics textbooks. She is also the creator and maintainer of datasciencebox.org and she teaches the popular Statistics with R MOOC on Coursera. Mine is a Fellow of the ASA and Elected Member of the ISI as well as the winner of the 2021 Robert V. Hogg Award for For Excellence in Teaching Introductory Statistics. In 2023, she is the Chair of the ASA Section on Statistical Computing."
+  },
+  {
+    "objectID": "talks/4-closeread/index.html",
+    "href": "talks/4-closeread/index.html",
+    "title": "Engage your Reader with Closeread",
+    "section": "",
+    "text": "Scrollytelling is a style of web design that transitions graphics and text as a user scrolls, allowing stories to progress naturally. Despite its power, scrollytelling typically requires specialist web dev skills beyond the reach of many data scientists. Closeread is a Quarto extension that makes a wide range of scrollytelling techniques available to authors without traditional web dev experience, with support for cross-fading plots, graphics and other chunk output alongside narrative content. You can zoom in on text, code, and images, and highlighting important components. Finally, Closeread allows authors with experience in Observable JS to write their own animated graphics that update smoothly as scrolling progresses."
+  },
+  {
+    "objectID": "talks/4-closeread/index.html#abstract",
+    "href": "talks/4-closeread/index.html#abstract",
+    "title": "Engage your Reader with Closeread",
+    "section": "",
+    "text": "Scrollytelling is a style of web design that transitions graphics and text as a user scrolls, allowing stories to progress naturally. Despite its power, scrollytelling typically requires specialist web dev skills beyond the reach of many data scientists. Closeread is a Quarto extension that makes a wide range of scrollytelling techniques available to authors without traditional web dev experience, with support for cross-fading plots, graphics and other chunk output alongside narrative content. You can zoom in on text, code, and images, and highlighting important components. Finally, Closeread allows authors with experience in Observable JS to write their own animated graphics that update smoothly as scrolling progresses."
+  },
+  {
+    "objectID": "talks/4-closeread/index.html#slides",
+    "href": "talks/4-closeread/index.html#slides",
+    "title": "Engage your Reader with Closeread",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "talks/4-closeread/index.html#speaker",
+    "href": "talks/4-closeread/index.html#speaker",
+    "title": "Engage your Reader with Closeread",
+    "section": "Speaker",
+    "text": "Speaker\n\nAndrew is an Associate Professor of Teaching at Berkeley University. He develops and teaches courses in statistics and data science. His research interests include statistical computing, data privacy, and applications of statistical models to environmental science."
   }
 ]
