@@ -15,9 +15,9 @@ Finally, Closeread allows authors with experience in Observable JS to write thei
 ## Slides
 
 ```{=html}
-<iframe class="slide-deck" src="https://tinyurl.com/abray-closeread" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<iframe class="slide-deck" src="https://closeread-jsm.netlify.app/" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
-[Full screen slides](https://tinyurl.com/abray-closeread)
+[Full screen slides](https://closeread-jsm.netlify.app/)
 
 ## Speaker
 

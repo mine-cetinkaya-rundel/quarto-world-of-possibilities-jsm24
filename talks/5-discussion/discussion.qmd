@@ -5,6 +5,13 @@ author: "mine çetinkaya-rundel"
 format: 
   revealjs:
     theme: discussion-slides.scss
+    highlight-style: a11y-dark
+revealjs-plugins:
+  - drop
+execute:
+  echo: true
+fig-width: 6
+fig-asp: 0.618
 ---
 
 ## one-stop shop
@@ -21,7 +28,7 @@ format:
 
 <hr>
 
-<img src="/talks/1-presentations/emil.png" alt="Emil Hvitfeldt" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"> Emil :: presentations with revealjs
+<img src="/talks/1-presentations/emil.png" alt="Emil Hvitfeldt" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"/> Emil :: presentations with revealjs
 
 <hr>
 
@@ -33,55 +40,257 @@ format:
 -   But it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools
 :::
 
+## slides with code + output
+
+```{r}
+#| echo: fenced
+#| output-location: fragment
+plot(cars)
+```
+
+## slides with code + output
+
+```{r}
+#| echo: fenced
+#| output-location: column-fragment
+plot(cars)
+```
+
 ## use `quarto`
 
 <hr>
 
-<img src="/talks/3-websites/charlotte.png" alt="Charlotte Wickham" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"> Charlotte :: websites
+<img src="/talks/3-websites/charlotte.png" alt="Charlotte Wickham" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"/> Charlotte :: websites
 
 <hr>
 
 ::: incremental
--   Item 1
+-   Don't start from scratch!
 
--   Item 2
+-   Tooling is there and well-documented for going from good to "stunning" presentations but it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools -- sound familiar?
 
--   Item 3
+-   There is no excuse for not having a personal (or otherwise) website made with Quarto
 :::
 
-## extend `quarto`
+## website = a few qmds + `_quarto.yml`
 
-<hr>
+```{=html}
+<iframe src="https://sta199-s24.github.io/project-spelling_bees/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
+```
+## student project websites
 
-<img src="/talks/4-closeread/andrew.png" alt="Andrew Bray" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"> Andrew :: closeread
+::: columns
+::: {.column width="50%"}
+-   GitHub repository
 
-<hr>
-
-::: incremental
--   Item 1
-
--   Item 2
-
--   Item 3
+-   few `.qmd`s
 :::
+
+::: {.column width="50%"}
+-   `_quarto.yml`
+
+-   GitHub action
+:::
+:::
+
+``` {.yaml filename=".github/workflows/render-website.yaml"}
+on:
+  push:
+    branches: main
+  workflow_dispatch:
+
+name: Render Website
+
+jobs:
+  build-website:
+    runs-on: self-hosted
+    container:
+      image: ghcr.io/dukestatsci/r_gh_actions:latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install packages
+        run: |
+          checklist::install_missing_pkgs()
+        shell: Rscript {0}
+        
+      - name: Render Quarto Project
+        run: |
+          quarto render &&
+          touch docs/.nojekyll
+      
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          clean: false
+          branch: gh-pages
+          folder: docs
+```
+
+## course websites + search
+
+```{=html}
+<iframe src="https://sta199-s24.github.io/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
+```
 
 ## break `quarto`
 
 <hr>
 
-<img src="/talks/2-programmatic-manipulation/colin.png" alt="Colin Rundel" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"> Colin :: [**parsermd**](https://rundel.github.io/parsermd/) / [rundel.github.io/parsermd](https://rundel.github.io/parsermd)
+<img src="/talks/2-programmatic-manipulation/colin.png" alt="Colin Rundel" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"/> Colin :: [**parsermd**](https://rundel.github.io/parsermd/) / [rundel.github.io/parsermd](https://rundel.github.io/parsermd)
+
+<hr>
+
+::: columns
+::: {.column width="70%"}
+::: incremental
+-   A Quarto document is ultimately a document you can break apart
+
+-   The document is structured in a way that `quarto` leverages that you can get at with other tooling as well
+
+-   In a teaching context, breaking apart a Quarto document can enable automated section-level feedback or more...
+:::
+:::
+:::
+
+![](images/parsermd.png){.absolute top="250" left="850" width="200"}
+
+## a look back at breaking `rmarkdown`
+
+1. Make a template
+
+```{.r filename="gen-template.R"}
+library(magrittr)
+library(readr)
+
+parsermd::parse_rmd("lab-06.Rmd") %>%
+  parsermd::as_tibble() %>%
+  dplyr::filter(sec_h3 != "Load packages" & !is.na(sec_h3)) %>%
+  parsermd::rmd_template(keep_content = TRUE, keep_headings = TRUE) %>%
+  write_rds(here::here(".github/workflows/template.rds"))
+```
+
+## a look back at break `rmarkdown` 
+
+2. Check against the a template with GitHub actions
+
+```{.yaml filename=".github/workflows/rmd_structure.yml"}
+on:
+  push:
+    paths:
+    - 'lab-06.Rmd'
+name: Check Rmd Structure
+jobs:
+  test:
+    runs-on: self-hosted
+    container:
+      image: ghcr.io/statprog-s1-2020/hw2-docker:latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Check Structure
+      run: |
+        tpl = readRDS(".github/workflows/template.rds")
+        checklist::quit_on_failure({
+          parsermd::rmd_check_template("lab-06.Rmd", tpl)
+        })
+      shell: Rscript {0}
+```
+
+## extend `quarto`
+
+<hr>
+
+<img src="/talks/4-closeread/andrew.png" alt="Andrew Bray" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"/> Andrew :: closeread
 
 <hr>
 
 ::: incremental
--   item 1
--   item 2
--   item 3
+-   Item 1
+
+-   Item 2
+
+-   Item 3
 :::
 
-![](images/parsermd.png){.absolute top=250 left=850 width="200"}
+## so many extensions!
 
-## thank you! {background-image="images/thank-you.png"}
+```{=html}
+<iframe class="slide-deck" src="https://quarto.org/docs/extensions/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
+```
+## as simple as...
+
+::: {.center-align}
+*easy peasy* {{< fa lemon >}} *squeezy*
+:::
+
+<br>
+
+. . .
+
+-   Install the `fontawesome` extension
+
+``` bash
+quarto add quarto-ext/fontawesome
+```
+
+. . .
+
+-   Use it with the `fa` shortcode
+
+``` markdown
+*easy peasy* {{< fa lemon >}} *squeezy*
+```
+
+## as not-so-simple as...
+
+![](images/article.png){fig-align="center"}
+
+## as not-so-simple as... {.nostretch}
+
+![](images/article.png){fig-align="center" width="500"}
+
+-   Install the `fontawesome` extension
+
+``` bash
+quarto use template quarto-journals/jasa
+```
+
+. . .
+
+-   Render the `.qmd`
+
+## did someone say?
+
+> What was the plot you showed us earlier?
+
+. . .
+
+-   Install the `quarto-drop` extension
+
+``` bash
+quarto add r-wasm/quarto-drop
+```
+
+. . .
+
+-   Add the plugin to your presentation yaml
+
+``` yaml
+---
+format: revealjs
+revealjs-plugins:
+  - drop
+---
+```
+
+## thank you! + questions? {background-image="images/thank-you.png"}
+
+::: {.center-align .large}
+[bit.ly/quarto-possibilities](https://bit.ly/quarto-possibilities)
+:::
 
 ::: aside
 Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022.
