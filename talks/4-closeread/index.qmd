@@ -1,6 +1,6 @@
 ---
 title: Engage your Reader with Closeread
-author: Colin Rundel
+author: Andrew Bray
 image: featured.png
 ---
 
