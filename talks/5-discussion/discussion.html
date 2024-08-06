@@ -13,7 +13,7 @@
   <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="mine çetinkaya-rundel">
-  <title>looking back, and looking beyond</title>
+  <title>looking back and looking beyond</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -394,7 +394,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">looking back,<br>and looking beyond</h1>
+  <h1 class="title">looking back<br>and looking beyond</h1>
   <p class="subtitle">a world of possibilities for<br>reproducible publishing with quarto</p>
 
 <div class="quarto-title-authors">
@@ -438,7 +438,7 @@ mine çetinkaya-rundel
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="discussion_files/figure-revealjs/unnamed-chunk-1-1.png" width="576"></p>
+<p><img data-src="discussion_files/figure-html/unnamed-chunk-1-1.png" width="576"></p>
 </figure>
 </div>
 </div>
@@ -456,7 +456,7 @@ mine çetinkaya-rundel
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="discussion_files/figure-revealjs/unnamed-chunk-2-1.png" width="576"></p>
+<p><img data-src="discussion_files/figure-html/unnamed-chunk-2-1.png" width="576"></p>
 </figure>
 </div>
 </div>
@@ -470,29 +470,30 @@ mine çetinkaya-rundel
 <div>
 <ul>
 <li class="fragment"><p>Don’t start from scratch!</p></li>
-<li class="fragment"><p>Tooling is there and well-documented for going from good to “stunning” presentations but it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools – sound familiar?</p></li>
+<li class="fragment"><p>Tooling is there and well-documented for going from good to “stunning” websites, but it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools – sound familiar?</p></li>
 <li class="fragment"><p>There is no excuse for not having a personal (or otherwise) website made with Quarto</p></li>
 </ul>
 </div>
 </section>
-<section id="website-a-few-qmds-_quarto.yml" class="slide level2">
-<h2>website = a few qmds + <code>_quarto.yml</code></h2>
-<iframe src="https://sta199-s24.github.io/project-spelling_bees/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
+<section id="course-websites-search" class="slide level2">
+<h2>course websites + search</h2>
+<iframe src="https://sta199-s24.github.io/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
 </section>
 <section id="student-project-websites" class="slide level2">
 <h2>student project websites</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li><p>GitHub repository</p></li>
 <li><p>few <code>.qmd</code>s</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
 <li><p><code>_quarto.yml</code></p></li>
+</ul>
+</div><div class="column fragment" style="width:50%;">
+<ul>
+<li><p>GitHub repo</p></li>
 <li><p>GitHub action</p></li>
 </ul>
 </div></div>
+<div class="fragment">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>.github/workflows/render-website.yaml</strong></pre>
@@ -531,10 +532,11 @@ mine çetinkaya-rundel
 <span id="cb3-32"><a></a><span class="at">          </span><span class="fu">branch</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
 <span id="cb3-33"><a></a><span class="at">          </span><span class="fu">folder</span><span class="kw">:</span><span class="at"> docs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</div>
 </section>
-<section id="course-websites-search" class="slide level2">
-<h2>course websites + search</h2>
-<iframe src="https://sta199-s24.github.io/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
+<section id="et-voila" class="slide level2">
+<h2>et voila!</h2>
+<iframe src="https://sta199-s24.github.io/project-spelling_bees/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
 </section>
 <section id="break-quarto" class="slide level2">
 <h2>break <code>quarto</code></h2>
@@ -622,8 +624,9 @@ mine çetinkaya-rundel
 </section>
 <section id="as-simple-as" class="slide level2">
 <h2>as simple as…</h2>
+<p><br></p>
 <div class="center-align">
-<p><em>easy peasy</em> <i class="fa-solid fa-lemon" aria-label="lemon"></i> <em>squeezy</em></p>
+<p>easy peasy <i class="fa-solid fa-lemon" aria-label="lemon"></i> squeezy</p>
 </div>
 <p><br></p>
 <div class="fragment">
@@ -636,7 +639,7 @@ mine çetinkaya-rundel
 <ul>
 <li>Use it with the <code>fa</code> shortcode</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a>*easy peasy*  *squeezy*</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img data-src="images/fontawesome.png" width="593"></p>
 </div>
 </section>
 <section id="as-not-so-simple-as" class="slide level2">
@@ -653,7 +656,7 @@ mine çetinkaya-rundel
 <ul>
 <li>Install the <code>fontawesome</code> extension</li>
 </ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a></a><span class="ex">quarto</span> use template quarto-journals/jasa</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="ex">quarto</span> use template quarto-journals/jasa</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <ul>
 <li>Render the <code>.qmd</code></li>
@@ -669,17 +672,17 @@ mine çetinkaya-rundel
 <ul>
 <li>Install the <code>quarto-drop</code> extension</li>
 </ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="ex">quarto</span> add r-wasm/quarto-drop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a></a><span class="ex">quarto</span> add r-wasm/quarto-drop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <ul>
 <li>Add the plugin to your presentation yaml</li>
 </ul>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a></a><span class="pp">---</span></span>
-<span id="cb10-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
-<span id="cb10-3"><a></a><span class="fu">revealjs-plugins</span><span class="kw">:</span></span>
-<span id="cb10-4"><a></a><span class="at">  </span><span class="kw">-</span><span class="at"> drop</span></span>
-<span id="cb10-5"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a></a><span class="pp">---</span></span>
+<span id="cb9-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
+<span id="cb9-3"><a></a><span class="fu">revealjs-plugins</span><span class="kw">:</span></span>
+<span id="cb9-4"><a></a><span class="at">  </span><span class="kw">-</span><span class="at"> drop</span></span>
+<span id="cb9-5"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="thank-you-questions" class="slide level2" data-background-image="images/thank-you.png">
@@ -912,44 +915,6 @@ mine çetinkaya-rundel
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
