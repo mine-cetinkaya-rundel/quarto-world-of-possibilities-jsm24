@@ -145,11 +145,14 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>[TO DO: Add abstract]</p>
+<p>As a data professional, at some point, you’ll want a website, whether it’s for yourself, a project, or a research group. Quarto is a great way to make one: build your site with plain text files that you can edit in your favorite tool and check in to version control; structure your content into folders and pages in a way that makes sense to you; create content that includes code and its output; and generate listing pages that help readers navigate collections of content like projects, publications or people.</p>
+<p>In this talk, I’ll walk you through the process from scratch. You’ll see how to get started with a basic template and then edit it to your needs, including adding pages, customizing navigation, adding a blog or other listing, personalizing the appearance, and getting it online.</p>
 </section>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<iframe class="slide-deck" src="../../talks/3-websites/websites.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<iframe src="https://charlotte.quarto.pub/jsm2024/#/title-slide" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<p><a href="https://charlotte.quarto.pub/jsm2024">Full Screen Slides</a></p>
+<p><a href="https://charlotte.quarto.pub/jsm2024/assets/demo.html">Annotated Notes</a></p>
 </section>
 <section id="speaker" class="level2">
 <h2 class="anchored" data-anchor-id="speaker">Speaker</h2>
@@ -256,7 +259,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/mine-cetinkaya-rundel\.github\.io\/quarto-world-of-possibilities-jsm24\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

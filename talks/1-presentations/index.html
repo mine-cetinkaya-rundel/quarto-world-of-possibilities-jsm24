@@ -145,11 +145,12 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>[TO DO: Add abstract]</p>
+<p>We write slides for a million reasons, and each of those reasons comes with different priorities. Regardless of which priorities you have, making your slides a better viewing experience should hopefully be one of them. This talk will go over how we can take a default set of slides and turn them into something stunning. we will be using Quarto as our medium but the advice is general. Then we continue with a number of tips and tricks that are Quarto specific to take your slides to the next level.</p>
 </section>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<iframe class="slide-deck" src="../../talks/1-presentations/presentations.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<iframe class="slide-deck" src=" https://emilhvitfeldt.github.io/talk-jsm-stunning-presentations/" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<p><a href="https://github.com/EmilHvitfeldt/talk-jsm-stunning-presentations.">Source code for slides</a></p>
 </section>
 <section id="speaker" class="level2">
 <h2 class="anchored" data-anchor-id="speaker">Speaker</h2>
@@ -252,7 +253,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/mine-cetinkaya-rundel\.github\.io\/quarto-world-of-possibilities-jsm24\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
