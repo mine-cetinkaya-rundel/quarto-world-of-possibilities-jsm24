@@ -18,9 +18,11 @@ The remainder of the talk will then focus on practical usage examples of these t
 ```
 [Source code for slides](https://github.com/rundel/Presentations/tree/master/JSM2024)
 
+[Full screen slides](https://rundel.github.io/Presentations/JSM2024/jsm2024.html)
+
 ## Speaker
 
-![](colin.jpeg){style="float: right; padding-left: 10px;" fig-alt="Photo of Colin Rundel" width="300"}
+![](colin.png){style="float: right; padding-left: 10px;" fig-alt="Photo of Colin Rundel" width="200"}
 
 Colin Rundel is Associate Professor of the Practice at Duke University where he has been teaching since 2012.
 His work focuses on teaching statistical computing to both undergraduate and graduate students in both R and Python.

@@ -17,9 +17,11 @@ Finally, Closeread allows authors with experience in Observable JS to write thei
 ```{=html}
 <iframe class="slide-deck" src="https://tinyurl.com/abray-closeread" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
+[Full screen slides](https://tinyurl.com/abray-closeread)
+
 ## Speaker
 
-![](andrew.jpg){style="float: right; padding-left: 10px;" fig-alt="Photo of Andrew Bray" width="300"}
+![](andrew.png){style="float: right; padding-left: 10px;" fig-alt="Photo of Andrew Bray" width="300"}
 
 Andrew is an Associate Professor of Teaching at Berkeley University.
 He develops and teaches courses in statistics and data science.

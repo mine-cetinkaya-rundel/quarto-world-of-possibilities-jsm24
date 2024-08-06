@@ -1,0 +1,91 @@
+---
+title: "looking back,<br>and looking beyond"
+subtitle: "a world of possibilities for<br>reproducible publishing with quarto"
+author: "mine çetinkaya-rundel"
+format: 
+  revealjs:
+    theme: discussion-slides.scss
+---
+
+## one-stop shop
+
+::: {.center-align .large}
+[bit.ly/quarto-possibilities](https://bit.ly/quarto-possibilities)
+
+```{=html}
+<iframe class="slide-deck" src="https://mine-cetinkaya-rundel.github.io/quarto-world-of-possibilities-jsm24" height="500" width="900" style="border: 1px solid #2e3846;"></iframe>
+```
+:::
+
+## use `quarto`
+
+<hr>
+
+<img src="/talks/1-presentations/emil.png" alt="Emil Hvitfeldt" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"> Emil :: presentations with revealjs
+
+<hr>
+
+::: incremental
+-   Getting started with a reproducible presentation that looks "good" is *easy peasy* {{< fa lemon >}} *squeezy*
+
+-   Tooling is there and well-documented for going from good to "stunning" presentations
+
+-   But it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools
+:::
+
+## use `quarto`
+
+<hr>
+
+<img src="/talks/3-websites/charlotte.png" alt="Charlotte Wickham" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"> Charlotte :: websites
+
+<hr>
+
+::: incremental
+-   Item 1
+
+-   Item 2
+
+-   Item 3
+:::
+
+## extend `quarto`
+
+<hr>
+
+<img src="/talks/4-closeread/andrew.png" alt="Andrew Bray" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"> Andrew :: closeread
+
+<hr>
+
+::: incremental
+-   Item 1
+
+-   Item 2
+
+-   Item 3
+:::
+
+## break `quarto`
+
+<hr>
+
+<img src="/talks/2-programmatic-manipulation/colin.png" alt="Colin Rundel" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"> Colin :: [**parsermd**](https://rundel.github.io/parsermd/) / [rundel.github.io/parsermd](https://rundel.github.io/parsermd)
+
+<hr>
+
+::: incremental
+-   item 1
+-   item 2
+-   item 3
+:::
+
+![](images/parsermd.png){.absolute top=250 left=850 width="200"}
+
+## thank you! {background-image="images/thank-you.png"}
+
+::: aside
+Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022.
+Illustrated by Allison Horst.
+:::
+
+## questions?

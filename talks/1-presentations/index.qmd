@@ -19,9 +19,11 @@ Then we continue with a number of tips and tricks that are Quarto specific to ta
 ```
 [Source code for slides](https://github.com/EmilHvitfeldt/talk-jsm-stunning-presentations.)
 
+[Full screen slides](https://emilhvitfeldt.github.io/talk-jsm-stunning-presentations/)
+
 ## Speaker
 
-![](emil.png){style="float: right; padding-left: 10px;" fig-alt="Photo of Emil Hvitfeldt" width="300"}
+![](emil.png){style="float: right; padding-left: 10px;" fig-alt="Photo of Emil Hvitfeldt" width="200"}
 
 Emil is a Software Engineer at [Posit PBC](https://posit.co/). Proud co-author of [Supervised Machine Learning for Text Analysis in R](https://smltar.com/) with [Julia Silge](https://juliasilge.com/).
 My interests include developing tools for natural language processing, machine learning using tidymodels, education, and the use of colors in data visualizations.
