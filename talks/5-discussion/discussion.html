@@ -31,11 +31,77 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #97947a;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #97947a;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2; background-color: #2b2b2b; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #dcc6e0; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #ffd700; } /* Attribute */
+    code span.bn { color: #dcc6e0; } /* BaseN */
+    code span.bu { color: #f5ab35; } /* BuiltIn */
+    code span.cf { color: #ffa07a; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffa07a; } /* Constant */
+    code span.co { color: #d4d0ab; } /* Comment */
+    code span.cv { color: #d4d0ab; font-style: italic; } /* CommentVar */
+    code span.do { color: #d4d0ab; font-style: italic; } /* Documentation */
+    code span.dt { color: #dcc6e0; } /* DataType */
+    code span.dv { color: #dcc6e0; } /* DecVal */
+    code span.er { color: #dcc6e0; } /* Error */
+    code span.ex { color: #ffd700; } /* Extension */
+    code span.fl { color: #f5ab35; } /* Float */
+    code span.fu { color: #ffd700; } /* Function */
+    code span.im { color: #f8f8f2; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; } /* Keyword */
+    code span.op { color: #00e0e0; } /* Operator */
+    code span.ot { color: #ffa07a; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.sc { color: #00e0e0; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #f5ab35; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #d4d0ab; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-drop/drop-runtime.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -360,6 +426,42 @@ mine çetinkaya-rundel
 </ul>
 </div>
 </section>
+<section id="slides-with-code-output" class="slide level2">
+<h2>slides with code + output</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a></a><span class="in">#| output-location: fragment</span></span>
+<span id="cb1-3"><a></a><span class="in">plot(cars)</span></span>
+<span id="cb1-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="discussion_files/figure-revealjs/unnamed-chunk-1-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="slides-with-code-output-1" class="slide level2">
+<h2>slides with code + output</h2>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb2-2"><a></a><span class="in">#| output-location: column-fragment</span></span>
+<span id="cb2-3"><a></a><span class="in">plot(cars)</span></span>
+<span id="cb2-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="discussion_files/figure-revealjs/unnamed-chunk-2-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
 <section id="use-quarto-1" class="slide level2">
 <h2>use <code>quarto</code></h2>
 <hr>
@@ -367,10 +469,138 @@ mine çetinkaya-rundel
 <hr>
 <div>
 <ul>
-<li class="fragment"><p>Item 1</p></li>
-<li class="fragment"><p>Item 2</p></li>
-<li class="fragment"><p>Item 3</p></li>
+<li class="fragment"><p>Don’t start from scratch!</p></li>
+<li class="fragment"><p>Tooling is there and well-documented for going from good to “stunning” presentations but it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools – sound familiar?</p></li>
+<li class="fragment"><p>There is no excuse for not having a personal (or otherwise) website made with Quarto</p></li>
 </ul>
+</div>
+</section>
+<section id="website-a-few-qmds-_quarto.yml" class="slide level2">
+<h2>website = a few qmds + <code>_quarto.yml</code></h2>
+<iframe src="https://sta199-s24.github.io/project-spelling_bees/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
+</section>
+<section id="student-project-websites" class="slide level2">
+<h2>student project websites</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>GitHub repository</p></li>
+<li><p>few <code>.qmd</code>s</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><p><code>_quarto.yml</code></p></li>
+<li><p>GitHub action</p></li>
+</ul>
+</div></div>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>.github/workflows/render-website.yaml</strong></pre>
+</div>
+<div class="sourceCode" id="cb3" data-filename=".github/workflows/render-website.yaml"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb3-2"><a></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb3-3"><a></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> main</span></span>
+<span id="cb3-4"><a></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
+<span id="cb3-5"><a></a></span>
+<span id="cb3-6"><a></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Render Website</span></span>
+<span id="cb3-7"><a></a></span>
+<span id="cb3-8"><a></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb3-9"><a></a><span class="at">  </span><span class="fu">build-website</span><span class="kw">:</span></span>
+<span id="cb3-10"><a></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> self-hosted</span></span>
+<span id="cb3-11"><a></a><span class="at">    </span><span class="fu">container</span><span class="kw">:</span></span>
+<span id="cb3-12"><a></a><span class="at">      </span><span class="fu">image</span><span class="kw">:</span><span class="at"> ghcr.io/dukestatsci/r_gh_actions:latest</span></span>
+<span id="cb3-13"><a></a><span class="at">    </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb3-14"><a></a><span class="at">      </span><span class="fu">GITHUB_PAT</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span>
+<span id="cb3-15"><a></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb3-16"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v2</span></span>
+<span id="cb3-17"><a></a></span>
+<span id="cb3-18"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install packages</span></span>
+<span id="cb3-19"><a></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb3-20"><a></a>          checklist::install_missing_pkgs()</span>
+<span id="cb3-21"><a></a><span class="at">        </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span>
+<span id="cb3-22"><a></a><span class="at">        </span></span>
+<span id="cb3-23"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render Quarto Project</span></span>
+<span id="cb3-24"><a></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb3-25"><a></a>          quarto render &amp;&amp;</span>
+<span id="cb3-26"><a></a>          touch docs/.nojekyll</span>
+<span id="cb3-27"><a></a><span class="at">      </span></span>
+<span id="cb3-28"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy 🚀</span></span>
+<span id="cb3-29"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> JamesIves/github-pages-deploy-action@v4</span></span>
+<span id="cb3-30"><a></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb3-31"><a></a><span class="at">          </span><span class="fu">clean</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb3-32"><a></a><span class="at">          </span><span class="fu">branch</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
+<span id="cb3-33"><a></a><span class="at">          </span><span class="fu">folder</span><span class="kw">:</span><span class="at"> docs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="course-websites-search" class="slide level2">
+<h2>course websites + search</h2>
+<iframe src="https://sta199-s24.github.io/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
+</section>
+<section id="break-quarto" class="slide level2">
+<h2>break <code>quarto</code></h2>
+<hr>
+<p><img src="../../talks/2-programmatic-manipulation/colin.png" alt="Colin Rundel" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"> Colin :: <a href="https://rundel.github.io/parsermd/"><strong>parsermd</strong></a> / <a href="https://rundel.github.io/parsermd">rundel.github.io/parsermd</a></p>
+<hr>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div>
+<ul>
+<li class="fragment"><p>A Quarto document is ultimately a document you can break apart</p></li>
+<li class="fragment"><p>The document is structured in a way that <code>quarto</code> leverages that you can get at with other tooling as well</p></li>
+<li class="fragment"><p>In a teaching context, breaking apart a Quarto document can enable automated section-level feedback or more…</p></li>
+</ul>
+</div>
+</div></div>
+<p><img data-src="images/parsermd.png" class="absolute" style="top: 250px; left: 850px; width: 200px; "></p>
+</section>
+<section id="a-look-back-at-breaking-rmarkdown" class="slide level2">
+<h2>a look back at breaking <code>rmarkdown</code></h2>
+<ol type="1">
+<li>Make a template</li>
+</ol>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>gen-template.R</strong></pre>
+</div>
+<div class="sourceCode" id="cb4" data-filename="gen-template.R"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">library</span>(magrittr)</span>
+<span id="cb4-2"><a></a><span class="fu">library</span>(readr)</span>
+<span id="cb4-3"><a></a></span>
+<span id="cb4-4"><a></a>parsermd<span class="sc">::</span><span class="fu">parse_rmd</span>(<span class="st">"lab-06.Rmd"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-5"><a></a>  parsermd<span class="sc">::</span><span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-6"><a></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(sec_h3 <span class="sc">!=</span> <span class="st">"Load packages"</span> <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(sec_h3)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-7"><a></a>  parsermd<span class="sc">::</span><span class="fu">rmd_template</span>(<span class="at">keep_content =</span> <span class="cn">TRUE</span>, <span class="at">keep_headings =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-8"><a></a>  <span class="fu">write_rds</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">".github/workflows/template.rds"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="a-look-back-at-break-rmarkdown" class="slide level2">
+<h2>a look back at break <code>rmarkdown</code></h2>
+<ol start="2" type="1">
+<li>Check against the a template with GitHub actions</li>
+</ol>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>.github/workflows/rmd_structure.yml</strong></pre>
+</div>
+<div class="sourceCode" id="cb5" data-filename=".github/workflows/rmd_structure.yml"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb5-2"><a></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb5-3"><a></a><span class="at">    </span><span class="fu">paths</span><span class="kw">:</span></span>
+<span id="cb5-4"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">'lab-06.Rmd'</span></span>
+<span id="cb5-5"><a></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Check Rmd Structure</span></span>
+<span id="cb5-6"><a></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb5-7"><a></a><span class="at">  </span><span class="fu">test</span><span class="kw">:</span></span>
+<span id="cb5-8"><a></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> self-hosted</span></span>
+<span id="cb5-9"><a></a><span class="at">    </span><span class="fu">container</span><span class="kw">:</span></span>
+<span id="cb5-10"><a></a><span class="at">      </span><span class="fu">image</span><span class="kw">:</span><span class="at"> ghcr.io/statprog-s1-2020/hw2-docker:latest</span></span>
+<span id="cb5-11"><a></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb5-12"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Checkout</span></span>
+<span id="cb5-13"><a></a><span class="at">      </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@master</span></span>
+<span id="cb5-14"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check Structure</span></span>
+<span id="cb5-15"><a></a><span class="fu">      run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb5-16"><a></a>        tpl = readRDS(".github/workflows/template.rds")</span>
+<span id="cb5-17"><a></a>        checklist::quit_on_failure({</span>
+<span id="cb5-18"><a></a>          parsermd::rmd_check_template("lab-06.Rmd", tpl)</span>
+<span id="cb5-19"><a></a>        })</span>
+<span id="cb5-20"><a></a><span class="at">      </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="extend-quarto" class="slide level2">
@@ -386,22 +616,77 @@ mine çetinkaya-rundel
 </ul>
 </div>
 </section>
-<section id="break-quarto" class="slide level2">
-<h2>break <code>quarto</code></h2>
-<hr>
-<p><img src="../../talks/2-programmatic-manipulation/colin.png" alt="Colin Rundel" style="float:right;width:120px;height:120px;padding-left:20px;margin:0px"> Colin :: <a href="https://rundel.github.io/parsermd/"><strong>parsermd</strong></a> / <a href="https://rundel.github.io/parsermd">rundel.github.io/parsermd</a></p>
-<hr>
-<div>
+<section id="so-many-extensions" class="slide level2">
+<h2>so many extensions!</h2>
+<iframe class="slide-deck" src="https://quarto.org/docs/extensions/" height="550" width="1000" style="border: 1px solid #2e3846;"></iframe>
+</section>
+<section id="as-simple-as" class="slide level2">
+<h2>as simple as…</h2>
+<div class="center-align">
+<p><em>easy peasy</em> <i class="fa-solid fa-lemon" aria-label="lemon"></i> <em>squeezy</em></p>
+</div>
+<p><br></p>
+<div class="fragment">
 <ul>
-<li class="fragment">item 1</li>
-<li class="fragment">item 2</li>
-<li class="fragment">item 3</li>
+<li>Install the <code>fontawesome</code> extension</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a></a><span class="ex">quarto</span> add quarto-ext/fontawesome</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<ul>
+<li>Use it with the <code>fa</code> shortcode</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a>*easy peasy*  *squeezy*</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="as-not-so-simple-as" class="slide level2">
+<h2>as not-so-simple as…</h2>
+
+<img data-src="images/article.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="as-not-so-simple-as-1" class="slide level2 nostretch">
+<h2>as not-so-simple as…</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/article.png" class="quarto-figure quarto-figure-center" width="500"></p>
+</figure>
+</div>
+<ul>
+<li>Install the <code>fontawesome</code> extension</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a></a><span class="ex">quarto</span> use template quarto-journals/jasa</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<ul>
+<li>Render the <code>.qmd</code></li>
 </ul>
 </div>
-<p><img data-src="images/parsermd.png" class="absolute" style="top: 250px; left: 850px; width: 200px; "></p>
 </section>
-<section id="thank-you" class="slide level2" data-background-image="images/thank-you.png">
-<h2>thank you!</h2>
+<section id="did-someone-say" class="slide level2">
+<h2>did someone say?</h2>
+<blockquote>
+<p>What was the plot you showed us earlier?</p>
+</blockquote>
+<div class="fragment">
+<ul>
+<li>Install the <code>quarto-drop</code> extension</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="ex">quarto</span> add r-wasm/quarto-drop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<ul>
+<li>Add the plugin to your presentation yaml</li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a></a><span class="pp">---</span></span>
+<span id="cb10-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
+<span id="cb10-3"><a></a><span class="fu">revealjs-plugins</span><span class="kw">:</span></span>
+<span id="cb10-4"><a></a><span class="at">  </span><span class="kw">-</span><span class="at"> drop</span></span>
+<span id="cb10-5"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="thank-you-questions" class="slide level2" data-background-image="images/thank-you.png">
+<h2>thank you! + questions?</h2>
+<div class="center-align large">
+<p><a href="https://bit.ly/quarto-possibilities">bit.ly/quarto-possibilities</a></p>
+</div>
 
 <aside><div>
 <p>Artwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.</p>
@@ -425,6 +710,7 @@ mine çetinkaya-rundel
   <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-drop/drop-runtime.js"></script>
   <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -446,6 +732,7 @@ mine çetinkaya-rundel
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'drop': {"button":true,"shortcut":"`","engine":"webr","webr":{"packages":[]},"pyodide":{"packages":[]}},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -616,7 +903,7 @@ mine çetinkaya-rundel
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealDrop, QuartoSupport,
 
           RevealMath,
           RevealNotes,
@@ -625,6 +912,44 @@ mine çetinkaya-rundel
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

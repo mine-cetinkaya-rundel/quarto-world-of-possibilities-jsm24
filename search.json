@@ -70,11 +70,67 @@
     "text": "use quarto\n\n Emil :: presentations with revealjs\n\n\n\nGetting started with a reproducible presentation that looks “good” is easy peasy  squeezy\nTooling is there and well-documented for going from good to “stunning” presentations\nBut it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools"
   },
   {
+    "objectID": "talks/5-discussion/discussion.html#slides-with-code-output",
+    "href": "talks/5-discussion/discussion.html#slides-with-code-output",
+    "title": "looking back,and looking beyond",
+    "section": "slides with code + output",
+    "text": "slides with code + output\n\n```{r}\n#| output-location: fragment\nplot(cars)\n```"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#slides-with-code-output-1",
+    "href": "talks/5-discussion/discussion.html#slides-with-code-output-1",
+    "title": "looking back,and looking beyond",
+    "section": "slides with code + output",
+    "text": "slides with code + output\n\n\n```{r}\n#| output-location: column-fragment\nplot(cars)\n```"
+  },
+  {
     "objectID": "talks/5-discussion/discussion.html#use-quarto-1",
     "href": "talks/5-discussion/discussion.html#use-quarto-1",
     "title": "looking back,and looking beyond",
     "section": "use quarto",
-    "text": "use quarto\n\n Charlotte :: websites\n\n\n\nItem 1\nItem 2\nItem 3"
+    "text": "use quarto\n\n Charlotte :: websites\n\n\n\nDon’t start from scratch!\nTooling is there and well-documented for going from good to “stunning” presentations but it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools – sound familiar?\nThere is no excuse for not having a personal (or otherwise) website made with Quarto"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#website-a-few-qmds-_quarto.yml",
+    "href": "talks/5-discussion/discussion.html#website-a-few-qmds-_quarto.yml",
+    "title": "looking back,and looking beyond",
+    "section": "website = a few qmds + _quarto.yml",
+    "text": "website = a few qmds + _quarto.yml"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#student-project-websites",
+    "href": "talks/5-discussion/discussion.html#student-project-websites",
+    "title": "looking back,and looking beyond",
+    "section": "student project websites",
+    "text": "student project websites\n\n\n\nGitHub repository\nfew .qmds\n\n\n\n_quarto.yml\nGitHub action\n\n\n\n\n.github/workflows/render-website.yaml\n\non:\n  push:\n    branches: main\n  workflow_dispatch:\n\nname: Render Website\n\njobs:\n  build-website:\n    runs-on: self-hosted\n    container:\n      image: ghcr.io/dukestatsci/r_gh_actions:latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n    steps:\n      - uses: actions/checkout@v2\n\n      - name: Install packages\n        run: |\n          checklist::install_missing_pkgs()\n        shell: Rscript {0}\n        \n      - name: Render Quarto Project\n        run: |\n          quarto render &&\n          touch docs/.nojekyll\n      \n      - name: Deploy 🚀\n        uses: JamesIves/github-pages-deploy-action@v4\n        with:\n          clean: false\n          branch: gh-pages\n          folder: docs"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#course-websites-search",
+    "href": "talks/5-discussion/discussion.html#course-websites-search",
+    "title": "looking back,and looking beyond",
+    "section": "course websites + search",
+    "text": "course websites + search"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#break-quarto",
+    "href": "talks/5-discussion/discussion.html#break-quarto",
+    "title": "looking back,and looking beyond",
+    "section": "break quarto",
+    "text": "break quarto\n\n Colin :: parsermd / rundel.github.io/parsermd\n\n\n\n\n\nA Quarto document is ultimately a document you can break apart\nThe document is structured in a way that quarto leverages that you can get at with other tooling as well\nIn a teaching context, breaking apart a Quarto document can enable automated section-level feedback or more…"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#a-look-back-at-breaking-rmarkdown",
+    "href": "talks/5-discussion/discussion.html#a-look-back-at-breaking-rmarkdown",
+    "title": "looking back,and looking beyond",
+    "section": "a look back at breaking rmarkdown",
+    "text": "a look back at breaking rmarkdown\n\nMake a template\n\n\n\ngen-template.R\n\nlibrary(magrittr)\nlibrary(readr)\n\nparsermd::parse_rmd(\"lab-06.Rmd\") %&gt;%\n  parsermd::as_tibble() %&gt;%\n  dplyr::filter(sec_h3 != \"Load packages\" & !is.na(sec_h3)) %&gt;%\n  parsermd::rmd_template(keep_content = TRUE, keep_headings = TRUE) %&gt;%\n  write_rds(here::here(\".github/workflows/template.rds\"))"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#a-look-back-at-break-rmarkdown",
+    "href": "talks/5-discussion/discussion.html#a-look-back-at-break-rmarkdown",
+    "title": "looking back,and looking beyond",
+    "section": "a look back at break rmarkdown",
+    "text": "a look back at break rmarkdown\n\nCheck against the a template with GitHub actions\n\n\n\n.github/workflows/rmd_structure.yml\n\non:\n  push:\n    paths:\n    - 'lab-06.Rmd'\nname: Check Rmd Structure\njobs:\n  test:\n    runs-on: self-hosted\n    container:\n      image: ghcr.io/statprog-s1-2020/hw2-docker:latest\n    steps:\n    - name: Checkout\n      uses: actions/checkout@master\n    - name: Check Structure\n      run: |\n        tpl = readRDS(\".github/workflows/template.rds\")\n        checklist::quit_on_failure({\n          parsermd::rmd_check_template(\"lab-06.Rmd\", tpl)\n        })\n      shell: Rscript {0}"
   },
   {
     "objectID": "talks/5-discussion/discussion.html#extend-quarto",
@@ -84,18 +140,46 @@
     "text": "extend quarto\n\n Andrew :: closeread\n\n\n\nItem 1\nItem 2\nItem 3"
   },
   {
-    "objectID": "talks/5-discussion/discussion.html#break-quarto",
-    "href": "talks/5-discussion/discussion.html#break-quarto",
+    "objectID": "talks/5-discussion/discussion.html#so-many-extensions",
+    "href": "talks/5-discussion/discussion.html#so-many-extensions",
     "title": "looking back,and looking beyond",
-    "section": "break quarto",
-    "text": "break quarto\n\n Colin :: parsermd / rundel.github.io/parsermd\n\n\n\nitem 1\nitem 2\nitem 3"
+    "section": "so many extensions!",
+    "text": "so many extensions!"
   },
   {
-    "objectID": "talks/5-discussion/discussion.html#thank-you",
-    "href": "talks/5-discussion/discussion.html#thank-you",
+    "objectID": "talks/5-discussion/discussion.html#as-simple-as",
+    "href": "talks/5-discussion/discussion.html#as-simple-as",
     "title": "looking back,and looking beyond",
-    "section": "thank you!",
-    "text": "thank you!\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "section": "as simple as…",
+    "text": "as simple as…\n\neasy peasy  squeezy\n\n\n\n\nInstall the fontawesome extension\n\nquarto add quarto-ext/fontawesome\n\n\n\nUse it with the fa shortcode\n\n*easy peasy*  *squeezy*"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#as-not-so-simple-as",
+    "href": "talks/5-discussion/discussion.html#as-not-so-simple-as",
+    "title": "looking back,and looking beyond",
+    "section": "as not-so-simple as…",
+    "text": "as not-so-simple as…"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#as-not-so-simple-as-1",
+    "href": "talks/5-discussion/discussion.html#as-not-so-simple-as-1",
+    "title": "looking back,and looking beyond",
+    "section": "as not-so-simple as…",
+    "text": "as not-so-simple as…\n\n\n\n\n\n\nInstall the fontawesome extension\n\nquarto use template quarto-journals/jasa\n\n\nRender the .qmd"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#did-someone-say",
+    "href": "talks/5-discussion/discussion.html#did-someone-say",
+    "title": "looking back,and looking beyond",
+    "section": "did someone say?",
+    "text": "did someone say?\n\nWhat was the plot you showed us earlier?\n\n\n\nInstall the quarto-drop extension\n\nquarto add r-wasm/quarto-drop\n\n\n\nAdd the plugin to your presentation yaml\n\n---\nformat: revealjs\nrevealjs-plugins:\n  - drop\n---"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#thank-you-questions",
+    "href": "talks/5-discussion/discussion.html#thank-you-questions",
+    "title": "looking back,and looking beyond",
+    "section": "thank you! + questions?",
+    "text": "thank you! + questions?\n\nbit.ly/quarto-possibilities\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "talks/5-discussion/discussion.html#questions",
