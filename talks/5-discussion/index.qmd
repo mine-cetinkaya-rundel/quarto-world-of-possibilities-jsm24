@@ -9,9 +9,13 @@ image: featured.png
 ```{=html}
 <iframe class="slide-deck" src="/talks/5-discussion/discussion.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
+[Source code for slides](https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/tree/main/talks/5-discussion)
+
+[Full screen slides](https://mine-cetinkaya-rundel.github.io/quarto-world-of-possibilities-jsm24/talks/5-discussion/discussion.html)
+
 ## Speaker
 
-![](mine.jpeg){style="float: right; padding-left: 10px;" fig-alt="Photo of Mine Çetinkaya-Rundel" width="300"}
+![](mine.png){style="float: right; padding-left: 10px;" fig-alt="Photo of Mine Çetinkaya-Rundel" width="200"}
 
 [Mine Çetinkaya-Rundel](https://mine-cr.com/) is Professor of the Practice at Duke University and Developer Educator at Posit.
 Mine's work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM.
