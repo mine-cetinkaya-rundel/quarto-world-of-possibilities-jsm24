@@ -6,13 +6,19 @@ image: featured.png
 
 ## Abstract
 
-\[TO DO: Add abstract\]
+We write slides for a million reasons, and each of those reasons comes with different priorities.
+Regardless of which priorities you have, making your slides a better viewing experience should hopefully be one of them.
+This talk will go over how we can take a default set of slides and turn them into something stunning.
+we will be using Quarto as our medium but the advice is general.
+Then we continue with a number of tips and tricks that are Quarto specific to take your slides to the next level.
 
 ## Slides
 
 ```{=html}
-<iframe class="slide-deck" src="/talks/1-presentations/presentations.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<iframe class="slide-deck" src=" https://emilhvitfeldt.github.io/talk-jsm-stunning-presentations/" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
+[Source code for slides](https://github.com/EmilHvitfeldt/talk-jsm-stunning-presentations.)
+
 ## Speaker
 
 ![](emil.png){style="float: right; padding-left: 10px;" fig-alt="Photo of Emil Hvitfeldt" width="300"}
