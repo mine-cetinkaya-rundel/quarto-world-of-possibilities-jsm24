@@ -3,6 +3,7 @@ title: Looking back and looking beyond
 subtitle: Discussion
 author: Mine Çetinkaya-Rundel
 image: featured.png
+image-alt: "Illustration of two penguins diving into the water from an iceberg, the moon is the shape of the Quarto logo."
 ---
 
 ## Slides

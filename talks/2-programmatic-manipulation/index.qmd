@@ -2,6 +2,7 @@
 title: Programmatic Manipulation of Quarto Documents for Teaching
 author: Colin Rundel
 image: featured.png
+image-alt: "Screenshot from Colin's presentation with parsermd package logo overlaid."
 ---
 
 ## Abstract

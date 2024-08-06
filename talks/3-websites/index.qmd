@@ -2,6 +2,7 @@
 title: From Zero to Website in Twenty Minutes with Quarto
 author: Charlotte Wickham
 image: featured.png
+image-alt: "Screenshot of website Charlotte created during this talk."
 ---
 
 ## Abstract

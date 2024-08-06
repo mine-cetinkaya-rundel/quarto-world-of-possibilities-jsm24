@@ -2,6 +2,7 @@
 title: Engage your Reader with Closeread
 author: Andrew Bray
 image: featured.png
+image-alt: "Screenshot from Andrew's presentation."
 ---
 
 ## Abstract

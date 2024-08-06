@@ -2,6 +2,7 @@
 title: Creating Stunning Presentations with Quarto
 author: Emil Hvitfeldt
 image: featured.png
+image-alt: "Screenshot from Emil's presentation with the wizard wand emoji overlaid."
 ---
 
 ## Abstract
