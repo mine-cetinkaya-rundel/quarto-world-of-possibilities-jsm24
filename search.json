@@ -18,7 +18,7 @@
     "href": "talks/1-presentations/index.html#slides",
     "title": "Creating Stunning Presentations with Quarto",
     "section": "Slides",
-    "text": "Slides\n\nSource code for slides"
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
   },
   {
     "objectID": "talks/1-presentations/index.html#speaker",
@@ -46,7 +46,7 @@
     "href": "talks/3-websites/index.html#slides",
     "title": "From Zero to Website in Twenty Minutes with Quarto",
     "section": "Slides",
-    "text": "Slides\n\nSource code for slides\nFull Screen Slides\nAnnotated Notes"
+    "text": "Slides\n\nSource code for slides\nFull screen slides\nAnnotated notes"
   },
   {
     "objectID": "talks/3-websites/index.html#speaker",
@@ -56,32 +56,53 @@
     "text": "Speaker\n\n\n\n\n\nCharlotte works at Posit, PBC on the Developer Relations team with a focus on Quarto."
   },
   {
-    "objectID": "talks/2-programmatic-manipulation/index.html",
-    "href": "talks/2-programmatic-manipulation/index.html",
-    "title": "Programmatic Manipulation of Quarto Documents for Teaching",
-    "section": "",
-    "text": "In this talk we will discuss the use of the parsermd package for the programmatic manipulation of Quarto documents. As the name implies the parsermd package was originally developed for the parsing and manipulation of RMarkdown documents, but we have recently worked to expand this functionality to support Quarto documents and their specific features (e.g. fenced divs, yaml chunk options, shortcodes, etc.). We will briefly review the structure of a typical Quarto document and how this is then represented within R once parsed as an abstract syntax tree (AST). The remainder of the talk will then focus on practical usage examples of these tools for teaching with Quarto, including automated feedback and cleaning, document restructuring, and others time permitting."
+    "objectID": "talks/5-discussion/discussion.html#one-stop-shop",
+    "href": "talks/5-discussion/discussion.html#one-stop-shop",
+    "title": "looking back,and looking beyond",
+    "section": "one-stop shop",
+    "text": "one-stop shop\n\nbit.ly/quarto-possibilities"
   },
   {
-    "objectID": "talks/2-programmatic-manipulation/index.html#abstract",
-    "href": "talks/2-programmatic-manipulation/index.html#abstract",
-    "title": "Programmatic Manipulation of Quarto Documents for Teaching",
-    "section": "",
-    "text": "In this talk we will discuss the use of the parsermd package for the programmatic manipulation of Quarto documents. As the name implies the parsermd package was originally developed for the parsing and manipulation of RMarkdown documents, but we have recently worked to expand this functionality to support Quarto documents and their specific features (e.g. fenced divs, yaml chunk options, shortcodes, etc.). We will briefly review the structure of a typical Quarto document and how this is then represented within R once parsed as an abstract syntax tree (AST). The remainder of the talk will then focus on practical usage examples of these tools for teaching with Quarto, including automated feedback and cleaning, document restructuring, and others time permitting."
+    "objectID": "talks/5-discussion/discussion.html#use-quarto",
+    "href": "talks/5-discussion/discussion.html#use-quarto",
+    "title": "looking back,and looking beyond",
+    "section": "use quarto",
+    "text": "use quarto\n\n Emil :: presentations with revealjs\n\n\n\nGetting started with a reproducible presentation that looks “good” is easy peasy  squeezy\nTooling is there and well-documented for going from good to “stunning” presentations\nBut it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools"
   },
   {
-    "objectID": "talks/2-programmatic-manipulation/index.html#slides",
-    "href": "talks/2-programmatic-manipulation/index.html#slides",
-    "title": "Programmatic Manipulation of Quarto Documents for Teaching",
-    "section": "Slides",
-    "text": "Slides\n\nSource code for slides"
+    "objectID": "talks/5-discussion/discussion.html#use-quarto-1",
+    "href": "talks/5-discussion/discussion.html#use-quarto-1",
+    "title": "looking back,and looking beyond",
+    "section": "use quarto",
+    "text": "use quarto\n\n Charlotte :: websites\n\n\n\nItem 1\nItem 2\nItem 3"
   },
   {
-    "objectID": "talks/2-programmatic-manipulation/index.html#speaker",
-    "href": "talks/2-programmatic-manipulation/index.html#speaker",
-    "title": "Programmatic Manipulation of Quarto Documents for Teaching",
-    "section": "Speaker",
-    "text": "Speaker\n\nColin Rundel is Associate Professor of the Practice at Duke University where he has been teaching since 2012. His work focuses on teaching statistical computing to both undergraduate and graduate students in both R and Python."
+    "objectID": "talks/5-discussion/discussion.html#extend-quarto",
+    "href": "talks/5-discussion/discussion.html#extend-quarto",
+    "title": "looking back,and looking beyond",
+    "section": "extend quarto",
+    "text": "extend quarto\n\n Andrew :: closeread\n\n\n\nItem 1\nItem 2\nItem 3"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#break-quarto",
+    "href": "talks/5-discussion/discussion.html#break-quarto",
+    "title": "looking back,and looking beyond",
+    "section": "break quarto",
+    "text": "break quarto\n\n Colin :: parsermd / rundel.github.io/parsermd\n\n\n\nitem 1\nitem 2\nitem 3"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#thank-you",
+    "href": "talks/5-discussion/discussion.html#thank-you",
+    "title": "looking back,and looking beyond",
+    "section": "thank you!",
+    "text": "thank you!\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#questions",
+    "href": "talks/5-discussion/discussion.html#questions",
+    "title": "looking back,and looking beyond",
+    "section": "questions?",
+    "text": "questions?"
   },
   {
     "objectID": "index.html",
@@ -112,6 +133,34 @@
     "text": "Homepage\nAll session materials can be viewed at https://bit.ly/quarto-possibilities. The GitHub repo that serves this site is at https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24."
   },
   {
+    "objectID": "talks/2-programmatic-manipulation/index.html",
+    "href": "talks/2-programmatic-manipulation/index.html",
+    "title": "Programmatic Manipulation of Quarto Documents for Teaching",
+    "section": "",
+    "text": "In this talk we will discuss the use of the parsermd package for the programmatic manipulation of Quarto documents. As the name implies the parsermd package was originally developed for the parsing and manipulation of RMarkdown documents, but we have recently worked to expand this functionality to support Quarto documents and their specific features (e.g. fenced divs, yaml chunk options, shortcodes, etc.). We will briefly review the structure of a typical Quarto document and how this is then represented within R once parsed as an abstract syntax tree (AST). The remainder of the talk will then focus on practical usage examples of these tools for teaching with Quarto, including automated feedback and cleaning, document restructuring, and others time permitting."
+  },
+  {
+    "objectID": "talks/2-programmatic-manipulation/index.html#abstract",
+    "href": "talks/2-programmatic-manipulation/index.html#abstract",
+    "title": "Programmatic Manipulation of Quarto Documents for Teaching",
+    "section": "",
+    "text": "In this talk we will discuss the use of the parsermd package for the programmatic manipulation of Quarto documents. As the name implies the parsermd package was originally developed for the parsing and manipulation of RMarkdown documents, but we have recently worked to expand this functionality to support Quarto documents and their specific features (e.g. fenced divs, yaml chunk options, shortcodes, etc.). We will briefly review the structure of a typical Quarto document and how this is then represented within R once parsed as an abstract syntax tree (AST). The remainder of the talk will then focus on practical usage examples of these tools for teaching with Quarto, including automated feedback and cleaning, document restructuring, and others time permitting."
+  },
+  {
+    "objectID": "talks/2-programmatic-manipulation/index.html#slides",
+    "href": "talks/2-programmatic-manipulation/index.html#slides",
+    "title": "Programmatic Manipulation of Quarto Documents for Teaching",
+    "section": "Slides",
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/2-programmatic-manipulation/index.html#speaker",
+    "href": "talks/2-programmatic-manipulation/index.html#speaker",
+    "title": "Programmatic Manipulation of Quarto Documents for Teaching",
+    "section": "Speaker",
+    "text": "Speaker\n\nColin Rundel is Associate Professor of the Practice at Duke University where he has been teaching since 2012. His work focuses on teaching statistical computing to both undergraduate and graduate students in both R and Python."
+  },
+  {
     "objectID": "talks/5-discussion/index.html#speaker",
     "href": "talks/5-discussion/index.html#speaker",
     "title": "Discussion",
@@ -137,7 +186,7 @@
     "href": "talks/4-closeread/index.html#slides",
     "title": "Engage your Reader with Closeread",
     "section": "Slides",
-    "text": "Slides"
+    "text": "Slides\n\nFull screen slides"
   },
   {
     "objectID": "talks/4-closeread/index.html#speaker",
